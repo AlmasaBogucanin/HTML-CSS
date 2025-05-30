@@ -1,0 +1,736 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  color: #1d1f22;
+}
+
+header {
+  width: 100%;
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #1d1f22;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+nav button {
+  padding: 10px 16px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border: none;
+}
+
+.login {
+  background-color: rgb(243, 235, 235);
+  color: #1d1f22;
+  border: 1px solid black;
+}
+
+.getstarted {
+  background-color: #8fcf86;
+  color: rgb(61, 59, 59);
+  padding: 12px 40px;
+}
+
+.okvir,
+.okvir2,
+.okvir3,
+.okvir4,
+.velikasekcija,
+.aboutus,
+.okvirgore,
+.kontejner {
+  width: 100%;
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+.card {
+  max-width: 600px;
+  text-align: center;
+  margin-top: -20px;
+}
+
+.card h1 {
+  font-size: 100px;
+  margin-top: -100px;
+}
+
+.card p {
+  font-size: 17px;
+  margin: 20px;
+  color: #555;
+}
+
+.card form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.card input {
+  padding: 14px 20px;
+  border: 2px solid rgb(165, 159, 159);
+  border-radius: 30px;
+  font-size: 15px;
+  width: 300px;
+}
+
+.card button {
+  padding: 14px 24px;
+  background-color: #a0e86d;
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1d1f22;
+  cursor: pointer;
+}
+
+.slike {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.slike img {
+  position: absolute;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+.img1 {
+  width: 280px;
+  top: 80px;
+  left: -60px;
+}
+
+.img2 {
+  width: 200px;
+  top: 110px;
+  right: -50px;
+}
+
+.img3 {
+  width: 260px;
+  bottom: 110px;
+  left: 30px;
+}
+
+.img4 {
+  width: 230px;
+  bottom: 40px;
+  right: 50px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #f5f5f5;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.box {
+  display: inline-block;
+  margin: 50px;
+  padding: 40px 92px;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+.box h2 {
+  font-size: 30px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.box p {
+  font-size: 15px;
+  color: #464d4e;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -200px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  min-width: 600px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.features-menu .dropdown-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.dropdown-item .icon {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.dropdown-item strong {
+  font-size: 16px;
+  color: #111;
+}
+
+.dropdown-item p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.okvir2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 600px;
+  background: #d0cbff;
+  border-radius: 20px;
+  position: relative;
+}
+
+.levo {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slika img {
+  width: 500px;
+  height: 350px;
+  border: 0.2px solid black;
+  border-radius: 10px;
+}
+
+.desno {
+  width: 45%;
+}
+
+.naslov {
+  font-size: 32px;
+  margin: 20px;
+  color: #222;
+}
+
+.tekst {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 24px;
+}
+
+.saznajvise {
+  padding: 12px 24px;
+  background: #414447;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-bottom: 24px;
+}
+
+.lista {
+  list-style: none;
+}
+
+.lista li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.okvir3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+  width: 100%;
+  background-color: rgb(244, 180, 163);
+  border-radius: 20px;
+  margin-top: 25px;
+}
+
+.red {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 25px;
+  background-color: white;
+  margin: 20px auto;
+  max-width: 1260px;
+}
+
+.okvir-half1,
+.okvir-half2 {
+  width: 48%;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.okvir-half1 {
+  background-color: #fde6b3;
+}
+
+.okvir-half2 {
+  background-color: #c8f2c6;
+}
+
+.desno-card,
+.levo-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cards2 {
+  width: 90%;
+  height: 170px;
+  background-color: #f9f9f9;
+  border: 2px solid #231c1c;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  margin: 70px auto;
+}
+
+.tekstic {
+  font-size: 20px;
+  margin: 60px 0 70px 40px;
+  color: #333;
+}
+
+.ikone {
+  display: inline-block;
+  margin: 4px;
+  padding: 20px;
+  border: 2px solid #bbb;
+  border-radius: 15px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.ikone i {
+  font-size: 28px;
+  color: rgb(35, 34, 34);
+}
+
+.okvir4 {
+  background-color: #eeede5;
+  border-radius: 24px;
+  padding: 45px;
+  margin: 40px auto;
+  height: 550px;
+  width: 100%;
+  max-width: 1164px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.gore {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.naslovokvir4 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1c1c1c;
+}
+
+.btni {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.btn,
+.btn1 {
+  padding: 12px 20px;
+  border-radius: 99px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid #1c1c1c;
+  background-color: transparent;
+}
+
+.btn {
+  background-color: #2d2e2d;
+  color: #79ef94;
+}
+
+.dole {
+  display: flex;
+  gap: 24px;
+  background-color: #cc95db;
+  border-radius: 24px;
+  padding: 32px;
+  margin: 0 auto;
+  max-width: 1260px;
+}
+
+.tekstovizacard2 {
+  width: 35%;
+  border-radius: 20px;
+  padding: 24px;
+  color: #1c1c1c;
+}
+
+.skupovi {
+  background-color: #f7daff;
+  border-radius: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.profiles {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+
+.aboutus {
+  width: 100%;
+  max-width: 1260px;
+  height: 400px;
+  background-color: #202c21;
+  text-align: center;
+  border-radius: 24px;
+  margin: -90px auto 0;
+}
+
+.velikiaboutus {
+  font-size: 80px;
+  color: white;
+  display: block;
+  padding: 30px 0;
+}
+
+.tekstaboutus {
+  font-size: 16px;
+  color: white;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.btnaboutus {
+  padding: 14px 50px;
+  border-radius: 30px;
+  background-color: #79ef94;
+  font-size: 16px;
+  display: block;
+  margin: 30px auto;
+}
+
+.slikeslike {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slikeslike img {
+  position: absolute;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.okvirgore {
+  width: 100%;
+  max-width: 1164px;
+  margin: 140px auto 40px;
+  border-radius: 24px;
+  height: 550px;
+}
+
+.onogore {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.naslovonogore {
+  font-size: 50px;
+  padding: 10px;
+}
+
+.tekstonogore {
+  width: 53%;
+  padding: 10px;
+}
+
+.btnonogore {
+  padding: 12px 30px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.onodole {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+.deo {
+  border: 1px solid black;
+  border-radius: 10px;
+  flex: 1 1 200px;
+  padding: 7px;
+  text-align: center;
+}
+
+.kontejner {
+  width: 100%;
+  max-width: 1260px;
+  background-color: #343d35;
+  text-align: center;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.kontejnernaslov {
+  font-size: 50px;
+  color: white;
+}
+
+.kontejnerbtn {
+  padding: 12px 25px;
+  background-color: rgb(95, 117, 95);
+  border-radius: 999px;
+  color: white;
+  cursor: pointer;
+}
+
+.kontejnertekst {
+  color: white;
+  font-size: 13px;
+}
+
+.velikasekcija {
+  width: 100%;
+  max-width: 1260px;
+  background-color: #e9e6d3;
+  position: relative;
+  border-radius: 24px;
+  margin: -300px auto 0;
+  padding: 30px;
+}
+
+.naslovdeo {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.glavniparagraf {
+  font-size: 15px;
+}
+
+.prvakartica,
+.drugakartica,
+.trecakartica,
+.cetvrtakartica,
+.petakartica {
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 24px;
+  text-decoration: none;
+  color: #000;
+}
+
+.prvakartica,
+.drugakartica {
+  width: 300px;
+}
+
+.trecakartica {
+  width: 770px;
+  background-color: #8fafc2;
+}
+
+.cetvrtakartica {
+  width: 250px;
+  background-color: #c8f2c6;
+}
+
+.petakartica {
+  width: 465px;
+  background-color: #d0cbff;
+}
+
+.footer {
+  background-color: #212721;
+  color: white;
+  padding: 60px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  margin: 20px;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+
+@media (max-width: 767px) {
+  header {
+    justify-content: center;
+    padding: 10px 20px;
+  }
+  nav {
+    display: none;
+  }
+  .okvir,
+  .okvir2,
+  .okvir3,
+  .okvir4,
+  .velikasekcija,
+  .aboutus,
+  .okvirgore,
+  .kontejner {
+    padding: 0 15px;
+  }
+  .card h1 { font-size: 48px; }
+  .card p { font-size: 14px; }
+  .card input { width: 100%; }
+  .slike img { width: 30%; margin: 10px auto; display: block; }
+  .cards,
+  .cards2,
+  .profiles,
+  .prvakartica,
+  .drugakartica,
+  .trecakartica,
+  .cetvrtakartica,
+  .petakartica {
+    flex-direction: column;
+    margin: 20px auto !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    padding: 30px 80px;
+  }
+  .okvir,
+  .okvir2,
+  .okvir3,
+  .okvir4,
+  .velikasekcija,
+  .aboutus,
+  .okvirgore,
+  .kontejner {
+    max-width: 1600px;
+    padding: 0 60px;
+  }
+  .card h1 { font-size: 120px; }
+  .card p { font-size: 18px; }
+  .slike img { width: auto; }
+  .cards .box { margin: 80px; padding: 50px 120px; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
