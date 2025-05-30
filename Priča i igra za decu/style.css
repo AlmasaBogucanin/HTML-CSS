@@ -1,0 +1,88 @@
+.scena {
+    display: none;
+    padding: 20px;
+    border: 5px solid rebeccapurple;
+    border-radius: 15px;
+    margin: 20px auto;
+    text-align: center;
+    position: relative;
+    background-color: #f3d9ff;
+
+
+  }
+  body{
+    background-color: #e4bff5;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+.scena:target{
+    display: block;
+    opacity: 1;
+}
+#scena1 {
+  display: block;
+}
+/* .scena1 {
+  display: block;
+} */
+  
+/* .scene {
+  display: none;
+  font-size: 24px;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.scene:target {
+  display: block;
+  opacity: 1;
+} */
+
+  .slika img {
+    max-width: 200px;
+    transition: transform 0.5s ease;
+    border: 3px solid rebeccapurple;
+  }
+
+  .slika img:hover {
+    transform: scale(1.05);
+  }
+  
+  .button-pulse {
+    margin: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: hotpink;
+    border: 2px solid rebeccapurple;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    animation: puls 1.5s infinite;
+}
+
+  @keyframes puls {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  .icon {
+    font-size: 10rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    animation: ikona 3s infinite;
+    border: 2px solid rebeccapurple;
+    border-radius: 50%;
+  }
+@keyframes ikona {
+    0%   {border-radius: 40%; border-color: rgb(177, 35, 35); transform: translateY(0); }
+    50%  {border-radius: 50%; border-color: rgb(40, 40, 138); transform: translateY(10px); }
+    100% {border-radius: 40%; border-color: rgb(211, 22, 173); transform: translateY(0); }
+}
+
+.slika-end img{
+  height: 250px;
+  width: 400px;
+}
